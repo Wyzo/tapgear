@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Nav_footer.Master.cs" Inherits="tapgear.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="Public/utils/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="Public/utils/css/bootstrap.css" rel="stylesheet" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-color: #0e0e0e">
+    <form id="form1" runat="server">
+        <div>
+            <header class="p-3 text-white shadow" style="background-image: url('Public/Imagens/Logos/teste.png'); background-size: cover;">
+                <div class="container">
+                    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                            <img src="Public/Imagens/Logos/logo.png" style="width: 170px;" alt=""/>
+                        </a>
+                        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 mx-4">
+                            <li><a href="User/Perfil.aspx" class="nav-link px-2 text-white">Perfis</a></li>
+                            <li><a href="#" class="nav-link px-2 text-white">Perfis</a></li>
+                            <li><a href="#" class="nav-link px-2 text-white">Perfis</a></li>
+                        </ul>
+                        <div class="text-end text-white">
+                            <button type="button text-white" class="btn me-2">Login/Registar</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
